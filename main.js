@@ -49,10 +49,10 @@ var restaurants = [{
             cost: '400',
 						bestDish: {
 									name: 'Corn Pizza',
-									image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
+									image: 'http://www.seriouseats.com/recipes/assets_c/2014/04/20140430-peeling-eggs-10-thumb-1500xauto-398212.jpg'
 								},
             hours: '9 AM to 1 AM (Mon-Sun)',
-            image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+            image: 'http://www.seriouseats.com/recipes/assets_c/2014/04/20140430-peeling-eggs-10-thumb-1500xauto-398212.jpg'
           },
           {
                 name: 'Sagar Ratna',
@@ -109,9 +109,9 @@ var restaurants = [{
 											// CHECK FOR THE PROTEIN ROR CARB OR FAT RICH FOOD
 											//console.log($scope.protein);
 										if ($scope.ingredients.indexOf(protein[i]) > -1) {
-												var info = "<p>Protien Rich</p>";
+												var info1 = "<p class='highlight-info'>Protein Rich</p>";
 												console.log("run");
-													$(".rest-extra .best-dish").append(info);
+													$(".rest-extra .bestDish").append(info1);
 													$(".highlight-info").css("background-color" ,"green");
 													break;
 												 }
